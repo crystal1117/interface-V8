@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="贷款项目" parallel="false"> <!-- 项目 -->
+  <test name="注册模块">                  <!-- 模块: 之后生成报表时候用到这个字段 --> 
+    <classes>
+      <class name="com.lemon.cases.RegisterCase"/>
+      <class name="com.lemon.cases.LoginCase"/>
+      <class name="com.lemon.cases.RechargeCase"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <parameter name = "type" value = "firefox"></parameter>
+  <parameter name = "version" value = "2"></parameter>
+</suite> <!-- Suite -->

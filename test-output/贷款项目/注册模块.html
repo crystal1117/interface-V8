@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  注册模块</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>注册模块</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 17 22:10:59 CST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5137 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lemon.cases.RegisterCase.test()'><b>test</b><br>Test class: com.lemon.cases.RegisterCase<br>Parameters: API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=1, desc=传手机号,不传密码, params={"mobile_phone":"19000000000","pwd":""}, apiId=1, expect={"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RegisterCase@31dc339b</td></tr>
+<tr>
+<td title='com.lemon.cases.RegisterCase.test()'><b>test</b><br>Test class: com.lemon.cases.RegisterCase<br>Parameters: API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=2, desc=不传手机号，传密码, params={"mobile_phone":"","pwd":"123456"}, apiId=1, expect={"code":1,"msg":"手机号为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RegisterCase@31dc339b</td></tr>
+<tr>
+<td title='com.lemon.cases.RegisterCase.test()'><b>test</b><br>Test class: com.lemon.cases.RegisterCase<br>Parameters: API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=3, desc=不合格的手机号, params={"mobile_phone":"123","pwd":"12345678"}, apiId=1, expect={"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RegisterCase@31dc339b</td></tr>
+<tr>
+<td title='com.lemon.cases.RegisterCase.test()'><b>test</b><br>Test class: com.lemon.cases.RegisterCase<br>Parameters: API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=4, desc=合格的手机号+不合格密码, params={"mobile_phone":"19000000000","pwd":"12345"}, apiId=1, expect={"code":2,"msg":"密码格式为8到16位","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RegisterCase@31dc339b</td></tr>
+<tr>
+<td title='com.lemon.cases.RegisterCase.test()'><b>test</b><br>Test class: com.lemon.cases.RegisterCase<br>Parameters: API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=5, desc=合格手机号+合格密码, params={"mobile_phone":"13363097865","pwd":"12345678"}, apiId=1, expect="code":0@@"msg":"OK", sql=select count(*) from member where mobile_phone = '13363097865';]</td>
+<td></td>
+<td>1</td>
+<td>com.lemon.cases.RegisterCase@31dc339b</td></tr>
+<tr>
+<td title='com.lemon.cases.RegisterCase.test()'><b>test</b><br>Test class: com.lemon.cases.RegisterCase<br>Parameters: API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=6, desc=重复以上的手机号+密码, params={"mobile_phone":"13363097865","pwd":"12345678"}, apiId=1, expect={"code":2,"msg":"账号已存在","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RegisterCase@31dc339b</td></tr>
+<tr>
+<td title='com.lemon.cases.LoginCase.test()'><b>test</b><br>Test class: com.lemon.cases.LoginCase<br>Parameters: API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=7, desc=传手机号，不传密码, params={"mobile_phone":"18900000000","pwd":""}, apiId=2, expect={"code":2,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.LoginCase@544fe44c</td></tr>
+<tr>
+<td title='com.lemon.cases.LoginCase.test()'><b>test</b><br>Test class: com.lemon.cases.LoginCase<br>Parameters: API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=8, desc=不传手机号，传密码, params={"mobile_phone":"","pwd":"12345678"}, apiId=2, expect={"code":2,"msg":"手机号码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.LoginCase@544fe44c</td></tr>
+<tr>
+<td title='com.lemon.cases.LoginCase.test()'><b>test</b><br>Test class: com.lemon.cases.LoginCase<br>Parameters: API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=9, desc=未注册过的手机号, params={"mobile_phone":"18901110001","pwd":"12345678"}, apiId=2, expect={"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.LoginCase@544fe44c</td></tr>
+<tr>
+<td title='com.lemon.cases.LoginCase.test()'><b>test</b><br>Test class: com.lemon.cases.LoginCase<br>Parameters: API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=10, desc=不满足条件的密码, params={"mobile_phone":"18842850710","pwd":"1B6D44A148D65DAD8D8C250DC01CC15F"}, apiId=2, expect={"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.LoginCase@544fe44c</td></tr>
+<tr>
+<td title='com.lemon.cases.LoginCase.test()'><b>test</b><br>Test class: com.lemon.cases.LoginCase<br>Parameters: API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=11, desc=已注册的账号, params={"mobile_phone":"13461729221","pwd":"12345678"}, apiId=2, expect="code":0@@"msg":"OK", sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.LoginCase@544fe44c</td></tr>
+<tr>
+<td title='com.lemon.cases.RechargeCase.test()'><b>test</b><br>Test class: com.lemon.cases.RechargeCase<br>Parameters: API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=12, desc=非当前账号id, params={"member_id":"8037184","amount":"6300"}, apiId=3, expect={"code":1007,"msg":"无权限访问，请检查参数","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RechargeCase@31610302</td></tr>
+<tr>
+<td title='com.lemon.cases.RechargeCase.test()'><b>test</b><br>Test class: com.lemon.cases.RechargeCase<br>Parameters: API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=13, desc=超过50万, params={"member_id":"8037184","amount":"1116300"}, apiId=3, expect={"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RechargeCase@31610302</td></tr>
+<tr>
+<td title='com.lemon.cases.RechargeCase.test()'><b>test</b><br>Test class: com.lemon.cases.RechargeCase<br>Parameters: API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=14, desc=负数, params={"member_id":"8037184","amount":"-6300"}, apiId=3, expect={"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RechargeCase@31610302</td></tr>
+<tr>
+<td title='com.lemon.cases.RechargeCase.test()'><b>test</b><br>Test class: com.lemon.cases.RechargeCase<br>Parameters: API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=15, desc=非数字, params={"member_id":"8037184","amount":"SSS"}, apiId=3, expect={"code":2,"msg":"数字格式化异常","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RechargeCase@31610302</td></tr>
+<tr>
+<td title='com.lemon.cases.RechargeCase.test()'><b>test</b><br>Test class: com.lemon.cases.RechargeCase<br>Parameters: API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=16, desc=正确用例, params={"member_id":"8037184","amount":"6300.12"}, apiId=3, expect="code":0@@"msg":"OK", sql=select leave_amount from member where id = '8037184';]</td>
+<td></td>
+<td>0</td>
+<td>com.lemon.cases.RechargeCase@31610302</td></tr>
+</table><p>
+</body>
+</html>

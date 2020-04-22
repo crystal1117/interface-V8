@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-贷款项目">
+              <span class="suite-name border-passed">贷款项目</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-贷款项目">
+                    <span>D:\developSoftware\Project\NameSpace\java_API_Auto_V8\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-贷款项目">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-贷款项目">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-贷款项目">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-贷款项目">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-贷款项目">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-贷款项目">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-贷款项目" class="hide-methods passed suite-贷款项目"> (hide)</a> <!-- hide-methods passed suite-贷款项目 -->
+                      <a href="#" panel-name="suite-贷款项目" class="show-methods passed suite-贷款项目"> (show)</a> <!-- show-methods passed suite-贷款项目 -->
+                    </span>
+                    <div class="method-list-content passed suite-贷款项目">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.LoginCase" hash-for-method="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RechargeCase" hash-for-method="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RechargeCase" hash-for-method="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RechargeCase" hash-for-method="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RechargeCase" hash-for-method="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RechargeCase" hash-for-method="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RegisterCase" hash-for-method="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RegisterCase" hash-for-method="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.LoginCase" hash-for-method="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RegisterCase" hash-for-method="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RegisterCase" hash-for-method="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.LoginCase" hash-for-method="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.LoginCase" hash-for-method="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.LoginCase" hash-for-method="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RegisterCase" hash-for-method="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-贷款项目" title="com.lemon.cases.RegisterCase" hash-for-method="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-贷款项目 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-贷款项目" class="panel 贷款项目">
+          <div class="suite-贷款项目-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lemon.cases.RechargeCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">
+                  </a> <!-- test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=15, desc=非数字, params={"member_id":"8037184","amount":"SSS"}, apiId=3, expect={"code":2,"msg":"数字格式化异常","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">
+                  </a> <!-- test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=14, desc=负数, params={"member_id":"8037184","amount":"-6300"}, apiId=3, expect={"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">
+                  </a> <!-- test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=16, desc=正确用例, params={"member_id":"8037184","amount":"6300.12"}, apiId=3, expect="code":0@@"msg":"OK", sql=select leave_amount from member where id = '8037184';])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">
+                  </a> <!-- test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=12, desc=非当前账号id, params={"member_id":"8037184","amount":"6300"}, apiId=3, expect={"code":1007,"msg":"无权限访问，请检查参数","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)">
+                  </a> <!-- test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, contentType=json], Case [id=13, desc=超过50万, params={"member_id":"8037184","amount":"1116300"}, apiId=3, expect={"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-贷款项目-class-passed -->
+          <div class="suite-贷款项目-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lemon.cases.RegisterCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">
+                  </a> <!-- test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=6, desc=重复以上的手机号+密码, params={"mobile_phone":"13363097865","pwd":"12345678"}, apiId=1, expect={"code":2,"msg":"账号已存在","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">
+                  </a> <!-- test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=1, desc=传手机号,不传密码, params={"mobile_phone":"19000000000","pwd":""}, apiId=1, expect={"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">
+                  </a> <!-- test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=3, desc=不合格的手机号, params={"mobile_phone":"123","pwd":"12345678"}, apiId=1, expect={"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">
+                  </a> <!-- test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=4, desc=合格的手机号+不合格密码, params={"mobile_phone":"19000000000","pwd":"12345"}, apiId=1, expect={"code":2,"msg":"密码格式为8到16位","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">
+                  </a> <!-- test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=5, desc=合格手机号+合格密码, params={"mobile_phone":"13363097865","pwd":"12345678"}, apiId=1, expect="code":0@@"msg":"OK", sql=select count(*) from member where mobile_phone = '13363097865';])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)">
+                  </a> <!-- test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, contentType=json], Case [id=2, desc=不传手机号，传密码, params={"mobile_phone":"","pwd":"123456"}, apiId=1, expect={"code":1,"msg":"手机号为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-贷款项目-class-passed -->
+          <div class="suite-贷款项目-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lemon.cases.LoginCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">
+                  </a> <!-- test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=9, desc=未注册过的手机号, params={"mobile_phone":"18901110001","pwd":"12345678"}, apiId=2, expect={"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">
+                  </a> <!-- test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=10, desc=不满足条件的密码, params={"mobile_phone":"18842850710","pwd":"1B6D44A148D65DAD8D8C250DC01CC15F"}, apiId=2, expect={"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">
+                  </a> <!-- test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=7, desc=传手机号，不传密码, params={"mobile_phone":"18900000000","pwd":""}, apiId=2, expect={"code":2,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">
+                  </a> <!-- test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=8, desc=不传手机号，传密码, params={"mobile_phone":"","pwd":"12345678"}, apiId=2, expect={"code":2,"msg":"手机号码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved"}, sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)">
+                  </a> <!-- test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType=json], Case [id=11, desc=已注册的账号, params={"mobile_phone":"13461729221","pwd":"12345678"}, apiId=2, expect="code":0@@"msg":"OK", sql=null])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-贷款项目-class-passed -->
+        </div> <!-- panel 贷款项目 -->
+        <div panel-name="test-xml-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\developSoftware\Project\NameSpace\java_API_Auto_V8\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;贷款项目&quot;&gt;
+  &lt;parameter name=&quot;type&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;version&quot; value=&quot;2&quot;/&gt;
+  &lt;test name=&quot;注册模块&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.lemon.cases.RegisterCase&quot;/&gt;
+      &lt;class name=&quot;com.lemon.cases.LoginCase&quot;/&gt;
+      &lt;class name=&quot;com.lemon.cases.RechargeCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 注册模块 --&gt;
+&lt;/suite&gt; &lt;!-- 贷款项目 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 贷款项目</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">注册模块 (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 贷款项目</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 贷款项目</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_贷款项目');
+function tableData_贷款项目() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test')
+data.setCell(0, 2, 'com.lemon.cases.RegisterCase')
+data.setCell(0, 3, 1135);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test')
+data.setCell(1, 2, 'com.lemon.cases.RegisterCase')
+data.setCell(1, 3, 915);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test')
+data.setCell(2, 2, 'com.lemon.cases.RechargeCase')
+data.setCell(2, 3, 782);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test')
+data.setCell(3, 2, 'com.lemon.cases.LoginCase')
+data.setCell(3, 3, 361);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test')
+data.setCell(4, 2, 'com.lemon.cases.LoginCase')
+data.setCell(4, 3, 355);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test')
+data.setCell(5, 2, 'com.lemon.cases.LoginCase')
+data.setCell(5, 3, 338);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test')
+data.setCell(6, 2, 'com.lemon.cases.RegisterCase')
+data.setCell(6, 3, 285);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test')
+data.setCell(7, 2, 'com.lemon.cases.LoginCase')
+data.setCell(7, 3, 156);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test')
+data.setCell(8, 2, 'com.lemon.cases.LoginCase')
+data.setCell(8, 3, 116);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test')
+data.setCell(9, 2, 'com.lemon.cases.RegisterCase')
+data.setCell(9, 3, 112);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test')
+data.setCell(10, 2, 'com.lemon.cases.RechargeCase')
+data.setCell(10, 3, 106);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test')
+data.setCell(11, 2, 'com.lemon.cases.RechargeCase')
+data.setCell(11, 3, 102);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test')
+data.setCell(12, 2, 'com.lemon.cases.RegisterCase')
+data.setCell(12, 3, 93);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test')
+data.setCell(13, 2, 'com.lemon.cases.RechargeCase')
+data.setCell(13, 3, 92);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test')
+data.setCell(14, 2, 'com.lemon.cases.RechargeCase')
+data.setCell(14, 3, 82);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test')
+data.setCell(15, 2, 'com.lemon.cases.RegisterCase')
+data.setCell(15, 3, 82);
+window.suiteTableData['贷款项目']= { tableData: data, tableDiv: 'times-div-贷款项目'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-贷款项目">
+              </div> <!-- times-div-贷款项目 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 贷款项目</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.lemon.cases.RechargeCase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">init</span>
+                <br/>
+                <span class="ignored-method-name">finish</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.lemon.cases.LoginCase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">finish</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-贷款项目" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lemon.cases.RegisterCase</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</span>
+                <span class="method-start">2593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</span>
+                <span class="method-start">3509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</span>
+                <span class="method-start">3603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</span>
+                <span class="method-start">3716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</span>
+                <span class="method-start">3798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=1, name=register, method=post, url=http://api.lemonban.com/futureloan/member/register, conte...)</span>
+                <span class="method-start">4933 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lemon.cases.LoginCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</span>
+                <span class="method-start">5220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</span>
+                <span class="method-start">5377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</span>
+                <span class="method-start">5494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</span>
+                <span class="method-start">5832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=2, name=login, method=post, url=http://api.lemonban.com/futureloan/member/login, contentType...)</span>
+                <span class="method-start">6193 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lemon.cases.RechargeCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</span>
+                <span class="method-start">6549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</span>
+                <span class="method-start">6656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</span>
+                <span class="method-start">6739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</span>
+                <span class="method-start">6842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test(API [id=3, name=recharge, method=post, url=http://api.lemonban.com/futureloan/member/recharge, conte...)</span>
+                <span class="method-start">6935 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lemon.cases.RegisterCase</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">finish</span>
+                <span class="method-start">7738 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
